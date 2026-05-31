@@ -3,3 +3,7 @@ kaggle
 dotenv
 pandas
 seaborn
+scikit-learn
+category_encoders
+dvc
+streamlit

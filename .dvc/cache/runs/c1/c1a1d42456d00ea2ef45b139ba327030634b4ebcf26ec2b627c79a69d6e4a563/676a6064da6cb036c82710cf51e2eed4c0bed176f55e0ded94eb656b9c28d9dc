@@ -1,0 +1,15 @@
+cmd: python data_cleaning.py
+deps:
+- path: data/Music Info.csv
+  hash: md5
+  md5: e63b74919a3cdada5c804df4666391c9
+  size: 14985870
+- path: data_cleaning.py
+  hash: md5
+  md5: 889f17c07f68e1914109f63706fe1645
+  size: 897
+outs:
+- path: data/cleaned_data.csv
+  hash: md5
+  md5: b5e99f8fcf0e54fa347c97490c779d67
+  size: 13709636
