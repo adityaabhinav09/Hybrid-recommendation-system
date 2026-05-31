@@ -3,4 +3,4 @@ million-song-dataset-spotify-lastfm.zip
 .kaggle
 venv
 .venv
-data/*
+data/
