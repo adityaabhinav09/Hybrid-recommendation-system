@@ -1,0 +1,13 @@
+# Minimal requirements for the Hybrid Recommendation System project
+# Use a clean virtual environment and install these packages only.
+
+numpy<2
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.6.0
+joblib==1.4.2
+dask==2024.12.1
+category-encoders==2.6.4
+streamlit==1.41.1
+# Optional if you want to run DVC stages from this environment
+dvc==3.58.0

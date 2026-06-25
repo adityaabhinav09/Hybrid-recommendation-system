@@ -1,6 +1,63 @@
+# Environment variables and secrets
 .env
-million-song-dataset-spotify-lastfm.zip
-.kaggle
-venv
-.venv
+.env.local
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# Data and datasets
 data/
+million-song-dataset-spotify-lastfm.zip
+.kaggle/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Testing and linting
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# DVC cache
+.dvc/cache
+dvc.lock
+
+# Streamlit cache
+.streamlit/
+*.streamlit.js
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+
+# macOS
+.DS_Store
+*.swp
+.AppleDouble
+.LSOverride
