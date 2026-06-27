@@ -21,6 +21,12 @@ def data_for_content_based_filtering(data):
         data.drop(columns=['track_id','name','spotify_preview_url'])
     )
 
+def data_for_content_filtering(data):
+
+    return (
+        data.drop(columns=['track_id','name','spotify_preview_url'])
+    )
+
 def main(data_path):
     
     #data loading
