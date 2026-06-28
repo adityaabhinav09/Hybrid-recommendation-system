@@ -44,10 +44,9 @@ jobs:
         run: |
           pkill -f "streamlit run"
 
-      
-jobs:
   CD:
     steps:
     - name: Deployment
       run: |
-        python test.py
+        python test.py   
+  
