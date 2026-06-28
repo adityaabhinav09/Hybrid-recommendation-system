@@ -45,6 +45,7 @@ jobs:
           pkill -f "streamlit run"
 
   CD:
+    runs-on: ubuntu-latest
     steps:
     - name: Deployment
       run: |
