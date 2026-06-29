@@ -9,7 +9,6 @@ ENV/
 env/
 
 # Data and datasets
-data/
 million-song-dataset-spotify-lastfm.zip
 .kaggle/
 
