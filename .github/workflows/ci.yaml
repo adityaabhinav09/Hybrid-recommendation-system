@@ -80,15 +80,15 @@ jobs:
             aws s3 cp deployment.zip s3://hybrid-recsys-deploy-bucket/deployment.zip
 
       # Deploy to AWS CodeDeploy using the uploaded ZIP file
-      - name: Deploy to AWS CodeDeploy
-        if: success()
-        run: |
-            aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
-            aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-            aws deploy create-deployment \
-            --application-name hybridrecommendersystem \
-            --deployment-config-name CodeDeployDefault.AllAtOnce \
-            --deployment-group-name hybrid-deployment-group-45 \
-            --s3-location bucket=hybrid-recsys-deploy-bucket,key=deployment.zip,bundleType=zip \
-            --file-exists-behavior OVERWRITE \
-            --region ap-south-1
+      # - name: Deploy to AWS CodeDeploy
+      #   if: success()
+      #   run: |
+      #       aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #       aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #       aws deploy create-deployment \
+      #       --application-name hybridrecommendersystem \
+      #       --deployment-config-name CodeDeployDefault.AllAtOnce \
+      #       --deployment-group-name hybrid-deployment-group-45 \
+      #       --s3-location bucket=hybrid-recsys-deploy-bucket,key=deployment.zip,bundleType=zip \
+      #       --file-exists-behavior OVERWRITE \
+      #       --region ap-south-1
